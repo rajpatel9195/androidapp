@@ -53,7 +53,7 @@ public class ProductActivity extends AppCompatActivity {
         productRecyclerview.setLayoutManager(new LinearLayoutManager(ProductActivity.this));
         productRecyclerview.setItemAnimator(new DefaultItemAnimator());
 
-        /*productArrayList = new ArrayList<>();
+        productArrayList = new ArrayList<>();
         for(int i=0;i<productNameArray.length;i++){
             ProductList list = new ProductList();
             list.setName(productNameArray[i]);
@@ -64,7 +64,7 @@ public class ProductActivity extends AppCompatActivity {
             productArrayList.add(list);
         }
         ProductListAdapter productAdapter = new ProductListAdapter(ProductActivity.this,productArrayList);
-        productRecyclerview.setAdapter(productAdapter);*/
+        productRecyclerview.setAdapter(productAdapter);
 
         if(new ConnectionDetector(ProductActivity.this).isConnectingToInternet()){
             new getData().execute();
